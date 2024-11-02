@@ -258,7 +258,7 @@ io.on("connection", (socket) => {
           listRooms.splice(indexToRemove, 1);
         }
         const newGame = new Game({
-          loser_id: "6688de78e57dc154ae9d93f0",
+          loser_id: "671db2db6eb3bba5fd34a305",
           gamePrice: 0,
           winner_id: user,
         });
@@ -279,7 +279,7 @@ io.on("connection", (socket) => {
           listRooms.splice(indexToRemove, 1);
         }
         const newGame = new Game({
-          loser_id: "6688de78e57dc154ae9d93f0",
+          loser_id: "671db2db6eb3bba5fd34a305",
           gamePrice: 0,
           winner_id: user,
         });
@@ -302,7 +302,7 @@ io.on("connection", (socket) => {
           const newGame = new Game({
             loser_id: user,
             gamePrice: 0,
-            winner_id: "6688de78e57dc154ae9d93f0",
+            winner_id: "671db2db6eb3bba5fd34a305",
           });
           newGame.save();
           socket.emit("finish-game", room);
